@@ -1,0 +1,99 @@
+apiVersion: vela.core.bdos/v1
+kind: Application
+metadata:
+  labels:
+    app: 'bpaas-core'
+  name: 'bpaas-core'
+  namespace: 'admin'
+spec:
+  components:
+  - name: 'bpaas-core'
+    properties:
+      cmd:
+      - /bin/bash
+      - -c
+      - $RUNTIME_HOME/entrypoint.sh
+      cpu: '0.5'
+      env:
+      - name: BDOS_PAAS_CORE_KUBERNETES_URL
+        value: http://bpaas-core-kubernetes-svc:8886/api/v1
+      - name: BDOS_WEB_HOST
+        value: bdos-web-svc
+      - name: BDOS_WEB_PORT
+        value: '3000'
+      - name: USER
+        value: 'dcos'
+      image: 'dev-reg-aliyun.linktimecloud.com/bpaas-core:4.0.2'
+      imagePullPolicy: Always
+      imagePullSecrets:
+      - name: devregistry
+      mem: '1024.0'
+      ports:
+      - containerPort: 8888
+        protocol: TCP
+      volumes:
+      - hostPath: '/opt/linktimecloud/bdos/bdos-core/cluster'
+        mountPath: '/opt/linktimecloud/bdos/bdos-core/cluster'
+        name: cluster
+        type: host
+      - hostPath: '/opt/linktimecloud/bdos/bdos-core/git-repo'
+        mountPath: '/opt/linktimecloud/bdos/bdos-core/git-repo'
+        name: git-repo
+        type: host
+      - hostPath: /var/log/admin-bpaas-core
+        mountPath: /usr/local/bpaas-core/logs
+        name: logs
+        type: host
+      - hostPath: '/opt/linktimecloud/bdos/bdos-core/processes'
+        mountPath: '/opt/linktimecloud/bdos/bdos-core/processes'
+        name: processes
+        type: host
+      - hostPath: '/opt/linktimecloud/bdos/bdos-core/apps'
+        mountPath: '/opt/linktimecloud/bdos/bdos-core/apps'
+        name: apps
+        type: host
+      - hostPath: '/opt/linktimecloud/bdos/bdos-core/templates'
+        mountPath: '/opt/linktimecloud/bdos/bdos-core/templates'
+        name: templates
+        type: host
+      - hostPath: '/opt/linktimecloud/bdos/userapps'
+        mountPath: '/opt/linktimecloud/bdos/bdos-core/userapps'
+        name: userapps
+        type: host
+      - hostPath: '/opt/linktimecloud/bdos/ssh_keys'
+        mountPath: /home/dcos/.ssh
+        name: ssh-keys
+        type: host
+      - hostPath: '/opt/linktimecloud/bdos/web/upload'
+        mountPath: '/opt/linktimecloud/bdos/bdos-core/web/upload'
+        name: upload
+        type: host
+      - hostPath: /etc/krb5.conf
+        mountPath: /etc/krb5.conf
+        name: krb5-conf
+        type: host
+      - hostPath: /home
+        mountPath: /keytab
+        name: keytab
+        type: host
+      - hostPath: /tmp
+        mountPath: /tmp
+        name: tmp
+        type: host
+      - hostPath: /root/.ssh
+        mountPath: /root/.ssh
+        name: root-ssh
+        type: host
+      - hostPath: /home/dcos/.docker
+        mountPath: /home/dcos/.docker
+        name: docker
+        type: host
+      - hostPath: /var/run/docker.sock
+        mountPath: /var/run/docker.sock
+        name: docker-sock
+        type: host
+      - hostPath: '/opt/linktimecloud/bdos/bdos-core/db'
+        mountPath: '/opt/linktimecloud/bdos/bdos-core/db'
+        name: db
+        type: host
+    type: bdosapp

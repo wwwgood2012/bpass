@@ -1,0 +1,10 @@
+{
+  "version": "4.0.2",
+  "showInAppStore": false,
+  "display-name": "bpaas-core",
+  "description": ["BPAAS Core Service"],
+  "type": "kubevela, docker, system, marathon",
+  "icon": "",
+  "required-service": [
+  ]
+}
