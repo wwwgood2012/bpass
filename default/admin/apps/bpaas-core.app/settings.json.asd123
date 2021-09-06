@@ -1,0 +1,277 @@
+{
+    "admin-bdos-daam-web-domain": "http://192.168.7.117:7768", 
+    "admin-bdos-dam-web-domain": "http://192.168.7.117:7768", 
+    "admin-bdos-data-monitoring-web-domain": "http://192.168.7.117:3010", 
+    "admin-bdos-data-service-web-domain": "http://192.168.7.117:8899", 
+    "admin-bdos-domain": "http://192.168.7.117:3000", 
+    "admin-bdos-etl-domain": "http://192.168.7.117:3001", 
+    "admin-bdos-labeling-domain": "http://192.168.7.121:3301", 
+    "admin-bdos-labeling-web-domain": "http://192.168.7.121:3301", 
+    "admin-bdos-online-web-domain": "http://192.168.7.117:4000", 
+    "admin-grafana-domain": "http://192.168.7.117:6060", 
+    "admin-hue-domain": "http://192.168.7.117:8787", 
+    "admin-jupyter-domain": "http://192.168.7.117:9527", 
+    "admin-kafka-manager": "http://192.168.7.117:9060", 
+    "admin-kafka-manager-domain": "http://192.168.7.121:9060", 
+    "admin-superset-domain": "http://192.168.7.117:14280", 
+    "admin-test-hue-domain": "http://192.168.7.117:18787", 
+    "admin-zeppelin-domain": "http://192.168.7.117:20808", 
+    "agent_number": 1, 
+    "aliyun_license_key": "eyJhbGciOiJIUzI1NiJ9.eyJzayI6Ik9EV0xNejNwVDd0M1B4T0s3QlRXOGJTQkpSUXJ1diIsImFrIjoiTFRBSTV0TFpXQkVadXNQWW1kNUdIU1R4Iiwiem9uZSI6ImNuLXNoYW5naGFpIn0.NIJ6XKuWPS-O4jUnPJEYvR2qBSxNe13kXIH_0mPJAas", 
+    "artifact-download-host": "https://nx-aliyun.linktimecloud.com/repository/raw-group-tmp", 
+    "artifact-download-pwd": "LinkTimeReadOnly", 
+    "artifact-download-user": "test.bdos", 
+    "artifact-host": "http://bdos-artifacts.marathon.l4lb.thisdcos.directory:8000", 
+    "artifact-type": "nexus", 
+    "artifact-upload-host": "https://nx-aliyun.linktimecloud.com/repository/raw-hosted-tmp", 
+    "artifact-upload-pwd": "data@LinkTime*", 
+    "artifact-upload-user": "data.bdos", 
+    "atlas-domain": "http://192.168.7.117:21000", 
+    "bdos-data-monitoring-web-domain": "http://192.168.7.117:3010", 
+    "bdos-data-service-web-domain": "http://192.168.7.117:8899", 
+    "bdos-domain": "http://192.168.7.117:3000", 
+    "bdos-etl-domain": "http://192.168.7.117:3001", 
+    "bdos-exp-domain": "http://192.168.7.117:3190", 
+    "bdos-online-web-domain": "http://192.168.7.117:4000", 
+    "bdos-web-mail-enabled": true, 
+    "bdos-web-ts-enabled": true, 
+    "bdos-web-uc-enabled": true, 
+    "bdos_dns": {
+        "adhoc_addresses": "", 
+        "local_port_listen": "15300", 
+        "public_dns": "223.5.5.5,223.6.6.6"
+    }, 
+    "blacklist_key": [], 
+    "client_kerberos_enabled": true, 
+    "cloud_slb": {
+        "ServerCertificateId": "1292692404319702_17a84dd2545_792837743_1852631152", 
+        "backend_weight": "100", 
+        "group_name": "bdos-online-slb", 
+        "listen_port": "443", 
+        "listen_protocol": "https", 
+        "root_domain": "linktimecloud.com", 
+        "sld_postfix": "online-staging"
+    }, 
+    "cluster_id": "bdos-r35.ErNtBw.KgwDIO3MqE3nf00RZM6XCBznYmI", 
+    "cluster_license_key": "eyJhbGciOiJIUzI1NiIsImV4cCI6MTY0ODI3NTMwMywiaWF0IjoxNjE2NzM5MzAzfQ.eyJhbGxvd2VkX3NpemUiOjk5OSwib3duZXIiOiJiZG9zLXIzNSIsImFsbG93ZWRfYXBwcyI6OTk5LCJpZCI6ImJkb3MtcjM1LkVyTnRCdy5LZ3dESU8zTXFFM25mMDBSWk02WENCem5ZbUkiLCJ2ZXJzaW9uX3R5cGUiOiJFRSJ9.JOKauee0iQTl_DGD9H-OYAPLeMarmPh3ds7Ft_pvGto", 
+    "datasource-mysql": {
+        "address": "master.innodb-cluster.l4lb.thisdcos.directory", 
+        "password": "123456", 
+        "port": "6446", 
+        "user": "root"
+    }, 
+    "default_system_user": "dcos", 
+    "docker-registry": "dev-reg-aliyun.linktimecloud.com", 
+    "docker-registry-auth-enabled": true, 
+    "docker-registry-private": "docker-registry.marathon.l4lb.thisdcos.directory:5000", 
+    "docker-registry-ucr": "docker-registry.marathon.l4lb.thisdcos.directory:80", 
+    "es_hosts_number": 1, 
+    "git-repository": "/home/dcos/bdos/git-repo/cluster.git", 
+    "gitlab-domain": "http://192.168.7.117:14282", 
+    "grafana-domain": "http://192.168.7.117:6060", 
+    "hadoop-heap-size": 3072, 
+    "hadoop-namenode-heap-size": "1126m", 
+    "hadoop-namenode-young-generation-heap-size": "128m", 
+    "hadoop-yarn-heapsize": 3072, 
+    "hadoop-yarn-nodemanager-resource-memory": 4096, 
+    "hadoop-yarn-scheduler-maximum-allocation-mb": 3072, 
+    "hadoop-yarn-scheduler-minimum-allocation-mb": 512, 
+    "haproxy_number": 1, 
+    "hosts": [
+        {
+            "PublicIpAddress": "192.168.7.117", 
+            "ip": "192.168.7.117", 
+            "name": "bootstrap1", 
+            "type": "bootstrap"
+        }, 
+        {
+            "PublicIpAddress": "192.168.7.118", 
+            "ip": "192.168.7.118", 
+            "name": "master1", 
+            "type": "master,namenode,journalnode"
+        }, 
+        {
+            "PublicIpAddress": "192.168.7.119", 
+            "ip": "192.168.7.119", 
+            "name": "master2", 
+            "type": "master,namenode,journalnode"
+        }, 
+        {
+            "PublicIpAddress": "192.168.7.120", 
+            "ip": "192.168.7.120", 
+            "name": "master3", 
+            "type": "master,journalnode,resourcemanager,historyserver"
+        }, 
+        {
+            "PublicIpAddress": "192.168.7.121", 
+            "ip": "192.168.7.121", 
+            "name": "agent1", 
+            "type": "agent,datanode,nodemanager,haproxy,es,broker,redis-master"
+        }, 
+        {
+            "PublicIpAddress": "192.168.7.122", 
+            "ip": "192.168.7.122", 
+            "name": "agent2", 
+            "type": "agent,datanode,nodemanager,haproxy,es,broker,zookeeper,redis-slave"
+        }, 
+        {
+            "PublicIpAddress": "192.168.7.123", 
+            "ip": "192.168.7.123", 
+            "name": "agent3", 
+            "type": "agent,datanode,nodemanager,es,broker,zookeeper,marathon-lb-ext,kdc-slave"
+        }, 
+        {
+            "PublicIpAddress": "192.168.7.124", 
+            "ip": "192.168.7.124", 
+            "name": "agent4", 
+            "type": "agent,datanode,nodemanager,marathon-lb-ext,broker,zookeeper,clickhouse-server,kdc-slave"
+        }
+    ], 
+    "hue-domain": "http://192.168.7.117:8787", 
+    "jenkins-ci-domain": "http://192.168.7.117:14281", 
+    "jupyter-domain": "http://192.168.7.117:9527", 
+    "kerberos_enabled": true, 
+    "keycloak-domain": "http://192.168.7.117:8383", 
+    "marathon-l4lb-domain": "marathon.l4lb.thisdcos.directory", 
+    "marathon-lb-ext-open-ports": [
+        {
+            "app_name": "caylaorg-p293-s1886", 
+            "port": 30500
+        }, 
+        {
+            "app_name": "caylaorg-p293-s1887", 
+            "port": 30501
+        }, 
+        {
+            "app_name": "personaljasonltc-python-demo", 
+            "port": 30502
+        }, 
+        {
+            "app_name": "qa0406-p444-s2805", 
+            "port": 30503
+        }, 
+        {
+            "app_name": "qa0406-p444-s2806", 
+            "port": 30504
+        }, 
+        {
+            "app_name": "standardorg-bigcloud-log-receive-server", 
+            "port": 30505
+        }, 
+        {
+            "app_name": "pfeng001-p577-s3818", 
+            "port": 30506
+        }
+    ], 
+    "marathon-update-artificially": false, 
+    "marathon_password": "123456", 
+    "marathon_user": "admin", 
+    "mesos_framework": {
+        "autoip-fqdn": "autoip.dcos.thisdcos.directory", 
+        "containerip-fqdn": "containerip.dcos.thisdcos.directory", 
+        "frameworks": {
+            "hdfs": {
+                "dn_count": "6", 
+                "name": "default", 
+                "uri": {
+                    "core-site": "http://bdos-artifacts.marathon.l4lb.thisdcos.directory:8000/frameworks/admin/hdfs/core-site.xml", 
+                    "hdfs-site": "http://bdos-artifacts.marathon.l4lb.thisdcos.directory:8000/frameworks/admin/hdfs/hdfs-site.xml", 
+                    "mapred-site": "http://bdos-artifacts.marathon.l4lb.thisdcos.directory:8000/frameworks/admin/hdfs/mapred-site.xml", 
+                    "webhdfs": "http://bdos-artifacts.marathon.l4lb.thisdcos.directory:8000/frameworks/admin/hdfs/webhdfs", 
+                    "yarn-site": "http://bdos-artifacts.marathon.l4lb.thisdcos.directory:8000/frameworks/admin/hdfs/yarn-site.xml"
+                }, 
+                "uri_basic_auth": ""
+            }
+        }, 
+        "l4lb-fqdn": "l4lb.thisdcos.directory"
+    }, 
+    "nfs_enabled": true, 
+    "nfs_root": "/opt/linktimecloud", 
+    "onelogin-ssl-required": "none", 
+    "onelogin_realm": "bdos", 
+    "org_init": {
+        "appConfig": {
+            "superset": {
+                "private": {
+                    "superset-onelogin-enabled": true, 
+                    "user-role": "admin"
+                }
+            }
+        }, 
+        "cloud_slb": {
+            "ServerCertificateId": "1292692404319702_17a84dd2545_792837743_1852631152", 
+            "backend_weight": "100", 
+            "group_name": "bdos-online-slb", 
+            "listen_protocol": "https", 
+            "root_domain": "linktimecloud.com", 
+            "sld_postfix": "online-staging"
+        }, 
+        "datasource-mysql": {
+            "address": "master.innodb-cluster.l4lb.thisdcos.directory", 
+            "password": "linktimeonline", 
+            "port": "6446"
+        }, 
+        "sysApps": [
+            "hue", 
+            "superset"
+        ], 
+        "templateApps": [
+            "jupyterlab"
+        ]
+    }, 
+    "single-hadoop": false, 
+    "superset-domain": "http://192.168.7.117:14280", 
+    "system-mysql": {
+        "address": "master.innodb-cluster.l4lb.thisdcos.directory", 
+        "password": "123456", 
+        "port": "6446", 
+        "user": "root"
+    }, 
+    "task-mapreduce-map-mem": 1024, 
+    "task-mapreduce-reduce-mem": 2048, 
+    "template": {
+        "jupyterlab": {
+            "app_type": "jupyterlab", 
+            "auto_recycle": {
+                "enabled": true, 
+                "lifecycle": 108000
+            }, 
+            "cli_options": "--dev-mode --extensions-in-dev-mode --ResourceUseDisplay.track_cpu_percent=True", 
+            "cpus": "4", 
+            "fetch": [], 
+            "mem": "6122", 
+            "placement": [], 
+            "public_path": "/opt/linktimecloud/erin", 
+            "tag": "jupyterlab-spark:v1.2.12"
+        }, 
+        "maas": {
+            "app_type": "maas", 
+            "cpus": "0.1", 
+            "disk": "0", 
+            "mem": "512"
+        }, 
+        "python": {
+            "app_type": "python", 
+            "fetch": [], 
+            "placement": []
+        }, 
+        "springboot": {
+            "app_type": "springboot", 
+            "fetch": [], 
+            "java_opts": "-Duser.timezone=GMT+08 -Djava.security.egd=file:/dev/./urandom", 
+            "placement": []
+        }, 
+        "tomcat": {
+            "app_type": "tomcat", 
+            "catalina_opts": "", 
+            "fetch": [], 
+            "java_opts": "-Duser.timezone=GMT+08", 
+            "placement": []
+        }
+    }, 
+    "test-hue-domain": "http://192.168.7.117:18787", 
+    "whitelist_key": [
+        "*"
+    ], 
+    "zeppelin-domain": "http://192.168.7.117:20808"
+}
